@@ -1,5 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
+import Button from './Reusables/Button'
+import Cross from '../assets/IconCross'
 
 const HeaderContainer = styled.div`
     display: flex;
@@ -19,23 +21,14 @@ const ButtonContainer = styled.div`
     display: flex;
 `;
 
-const Button = styled.button`
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: #ccc;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-`;
-
 const Header: React.FC = () => {
     return (
         <HeaderContainer>
             <Title>My Header</Title>
             <ButtonContainer>
-                <Button>a</Button>
-                <Button>b</Button>
-                <Button>c</Button>
+                <Button onClick={()=>{}} title='a button' children={<Cross />}/>
+                <Button onClick={()=>{}} title='a button' children={<Cross />}/>
+                <Button onClick={()=>{}} title='a button' children={<Cross />}/>
             </ButtonContainer>
         </HeaderContainer>
     );

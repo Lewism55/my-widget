@@ -7,11 +7,12 @@ const StyledWidget = styled.div`
     position: fixed;
     display: flex;
     flex-direction: column;
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 5px;
     height: 600px;
     width: 400px;
     z-index: 9999;
+    border: 1px solid black;
 `;
 
 const Widget = () => {
